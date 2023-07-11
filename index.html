@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Personal Website">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Ian Fancher">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>ianfancher.com</title>
+        <link rel="stylesheet" href="app.css?ver=1"/>
+        <link rel="shortcut icon" href="#" />
+
+    </head>
+    <body>
+        <nav>
+            <a class="navbar-name">Ian Fancher</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="home" id="home">
+                <img src="assets/IF.png" style="height: 30.88em; width: 23.16em;" class="pfp">
+                <h1 class="nameheader">Ian Fancher</h1>
+            </div>
+        </header>
+
+        <!-- About me section -->
+        <section>
+            <div class="about" id="about">
+                <p class="aboutMePara">Hello, my name is Ian Fancher. I am a newly graduated software developer who is looking for work in the software development industry. I graduated with a Bachelors
+                     in computer science from Arizona State University in May, 2023. I am very familiar with object-oriented programming as well as service-oriented architecture.
+                </p>
+                <br>
+                <p class="aboutMePara">P.S. This website is still under cronstruction, so it might look different the next time you visit.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio section -->
+        <section>
+            <div class="portfolioWrapper">  
+                <h2>My Portfolio</h2>
+                <div class="portfolioList" id="portfolio">
+                    <img src="assets/snake.PNG" class="portfolioImage">
+                    <div>
+                        <p class="portfolioP">This is a simple snake game I developed using JavaScript.<br>It uses the arrow keys to control the snake</p>
+                        <button onclick="window.location.href='snake/snake.html'" class="portfolioButton">play</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section>
+            <div class="contact" id="contact">
+                <form action="https://formsubmit.co/fancher.ian@gmail.com" method="POST">
+                    <h3>Contact Me</h3>
+
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+                    <!-- Turn off captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number (optional)">
+                    <textarea id="message" name="message" cols="30" rows="4" placeholder="Write your message here" required></textarea>
+                    <button type="submit">send</button>
+                </form>
+            </div>
+        </section>
+    </body>
+
+    <script src="app.js"/></script>
+</html>
